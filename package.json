@@ -1,0 +1,33 @@
+{
+  "name": "whatsapp-api-test",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "start:dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "whatsapp-api",
+    "node.js"
+  ],
+  "author": "Rahmat Hidayat",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-validator": "^6.11.0",
+    "http": "0.0.1-security",
+    "node-datetime": "^2.1.2",
+    "path": "^0.12.7",
+    "pg": "^8.6.0",
+    "qrcode": "^1.4.4",
+    "qrcode-terminal": "^0.12.0",
+    "serve-favicon": "^2.5.0",
+    "sharp": "^0.28.1",
+    "socket.io": "^4.0.2",
+    "whatsapp-web.js": "^1.12.6"
+  }
+}
