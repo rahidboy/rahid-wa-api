@@ -145,7 +145,7 @@ const db = require('./helpers/db.js');
     }
   
     const number = phoneNumberFormatter(req.body.number);
-    const message = '📣 *SIPP Admin [no-reply]* 📣 \n\n'+req.body.message;
+    const message = '📣 *Notifikasi SIPP [no-reply]* 📣\n'+req.body.message;
     
     const isRegisteredNumber = await checkRegisteredNumber(number);
   
