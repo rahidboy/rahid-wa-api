@@ -37,7 +37,7 @@ const db = require('./helpers/db.js');
   app.use(express.static(__dirname+'/public'));
   app.use(favicon(path.join(__dirname, 'public', 'images/favicon.ico')))
   
-  const readSession = db.readSession();
+  const savedSession = await db.readSession();
 
   const client = new Client({
     restartOnAuthFail: true,
@@ -54,7 +54,7 @@ const db = require('./helpers/db.js');
         '--disable-gpu'
       ],
     },
-    session: readSession
+    session: savedSession
   });
   
   client.on('message', msg => {
